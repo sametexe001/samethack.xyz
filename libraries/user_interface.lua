@@ -3,7 +3,7 @@ if getgenv().library then
 end
 local library = {
     theme = {
-        accent = Color3.fromRGB(160, 166, 255);
+        accent = Color3.fromRGB(160, 255, 215);
     };
     ui_key = Enum.KeyCode.End;
     tween_speed = 0.2;
@@ -1122,7 +1122,7 @@ do
             local indicator = instance.new("Frame", {
                 Name = "indicator";
                 Parent = realslider;
-                BackgroundColor3 = Color3.fromRGB(160, 166, 255);
+                BackgroundColor3 = library.theme.accent;
                 BorderColor3 = Color3.fromRGB(0, 0, 0);
                 BorderSizePixel = 0;
                 Size = UDim2.new(0.5, 0, 1, 0);
@@ -2114,15 +2114,15 @@ local grobx = library_settings:section({name = "main", side = "left"})
 local aaaaa = section:toggle({name = "roblox hack", state = false, flag = "roblox hacks enabled", callback = function(v) print(v) end});
 local settingsss = aaaaa:settings(112)
 settingsss:toggle({name = "hack bitdancer", state = false, flag = "roblox hacks enabled", callback = function(v) print(v) end});
-settingsss:toggle({name = "rape kids", state = false, flag = "roblox hacks enabled", callback = function(v) print(v) end});
+settingsss:toggle({name = "rarara", state = false, flag = "roblox hacks enabled", callback = function(v) print(v) end});
 settingsss:toggle({name = "bully unvhook", state = false, flag = "roblox hacks enabled", callback = function(v) print(v) end});
 settingsss:button({name = "hack bullets", callback = function() warn("pressed"); end});
-settingsss:slider({name = "rape unvhook", min = 15, max = 25, decimals = 0.1, state = 17, suffix = "", flag = "Slider", Callback = function(v)print(v)end})
+settingsss:slider({name = "unvhook", min = 15, max = 25, decimals = 0.1, state = 17, suffix = "", flag = "Slider", Callback = function(v)print(v)end})
 
 section:button({name = "hack bullets", callback = function() warn("pressed"); end});
 section:slider({name = "slide", min = 15, max = 25, decimals = 0.1, state = 17, suffix = "", flag = "Slider", Callback = function(v)print(v)end})
-section:dropdown({name = "person to rape", options = {"unvhook","nova (atg-external.sln)","zyzo","summon","merxy","isk"}, state = "zyzo", flag = "dropdown", multi = false, callback = function(v)print(v)end})
-section:colorpicker({name = "rape color", flag = "Colorpicker", state = library.theme.accent, callback = function(v) print(v) end});
+section:dropdown({name = "person to burn", options = {"unvhook","nova (atg-external.sln)","zyzo","summon","merxy","isk"}, state = "zyzo", flag = "dropdown", multi = false, callback = function(v)print(v)end})
+section:colorpicker({name = "burn color", flag = "Colorpicker", state = library.theme.accent, callback = function(v) print(v) end});
 section:keybind({name = "keybind", state = nil, flag = "keybind", callback = function(v) print(v) end})
 
 grobx:slider({name = "tween speed", min = 0, max = 1, decimals = 0.01, state = 0.1, suffix = "s", flag = "library_tween_speed", callback = function(v) library.tween_speed = v end});
