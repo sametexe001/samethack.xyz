@@ -1,8 +1,8 @@
 local esp_library = {
     settings = {
-        master_switch = true;
+        master_switch = false;
         boxes = {
-            enabled = true;
+            enabled = false;
             color  = Color3.fromRGB(255,255,255);
             gradient = {true, Color3.fromRGB(255,255,255), Color3.fromRGB(119, 120, 255)};
             filled = {
@@ -16,7 +16,7 @@ local esp_library = {
         };
 
         names = {
-            enabled = true;
+            enabled = false;
             color = Color3.fromRGB(255,255,255);
             outline = true;
             type = "lower"; -- lower, HIGHER
@@ -24,13 +24,13 @@ local esp_library = {
         };
 
         flags = {
-            distance = {true, Color3.fromRGB(255,255,255)};
-            tool = {true, Color3.fromRGB(255,255,255)};
-            state = {true, Color3.fromRGB(255,255,255)};
+            distance = {false, Color3.fromRGB(255,255,255)};
+            tool = {false, Color3.fromRGB(255,255,255)};
+            state = {false, Color3.fromRGB(255,255,255)};
         };
 
         health_bars = {
-            enabled = true;
+            enabled = false;
             color = Color3.fromRGB(255, 255, 255);
             use_health_color = false;
             gradient = {true, Color3.fromRGB(255,255,255), Color3.fromRGB(119, 120, 255)};
